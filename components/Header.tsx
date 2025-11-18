@@ -16,7 +16,7 @@ export default function Header({ onRefresh }: Props) {
       <Text style={styles.title}>Weather App</Text>
 
       <View style={styles.actions}>
-        {/* Refresh Button */}
+        
         <TouchableOpacity onPress={onRefresh} style={styles.button}>
           <Ionicons name="refresh" size={26} color="#fff" />
         </TouchableOpacity>

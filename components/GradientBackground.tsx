@@ -28,14 +28,14 @@ export default function GradientBackground({
 function getGradient(condition: string) {
   const text = condition.toLowerCase();
 
-  // ---- DAY / NIGHT CHECK ----
+
   const hour = new Date().getHours();
   const isNight = hour >= 19 || hour <= 5;
 
-  // ---- CLEAR ----
+  
   if (text.includes("clear")) {
     return isNight
-      ? ["#0f2027", "#203a43", "#2c5364"] // dark ocean night
+      ? ["#0f2027", "#203a43", "#2c5364"]
       : ["#fceabb", "#f8b500"]; 
   }
 
@@ -63,7 +63,7 @@ function getGradient(condition: string) {
 
   
   if (text.includes("snow") || text.includes("blizzard")) {
-    return ["#E0EAFC", "#CFDEF3"]; // icy winter colors
+    return ["#E0EAFC", "#CFDEF3"]; 
   }
 
  
@@ -71,7 +71,7 @@ function getGradient(condition: string) {
     return ["#3E5151", "#DECBA4"];
   }
 
-  // ---- DEFAULT ----
+
   return ["#4e54c8", "#8f94fb"];
 }
 

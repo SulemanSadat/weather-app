@@ -10,7 +10,7 @@ import Loading from "../components/Loading";
 import ErrorMessage from "../components/ErrorMessage";
 import Header from "../components/Header";
 import { fetchWeather } from "../services/weatherApi";
-import WindCompass from "../components/WindCompass";
+
 
 export default function Index() {
   const [data, setData] = useState(null);

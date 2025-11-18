@@ -12,7 +12,7 @@ import Animated, { FadeInDown } from "react-native-reanimated";
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 
-// Enable layout animation for Android
+
 if (
   Platform.OS === "android" &&
   UIManager.setLayoutAnimationEnabledExperimental
@@ -31,7 +31,7 @@ export default function Settings() {
 
   return (
     <View style={styles.container}>
-      {/* Home Button */}
+   
       <TouchableOpacity
         style={styles.homeButton}
         onPress={() => router.push("/")}
@@ -40,12 +40,12 @@ export default function Settings() {
         <Text style={styles.homeText}>Home</Text>
       </TouchableOpacity>
 
-      {/* Title */}
+    
       <Animated.Text entering={FadeInDown.duration(600)} style={styles.title}>
         Settings
       </Animated.Text>
 
-      {/* About This App Dropdown */}
+ 
       <View style={styles.card}>
         <TouchableOpacity style={styles.dropdownHeader} onPress={toggle}>
           <Text style={styles.dropdownTitle}>About this app</Text>
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
 
-  /* Home Button */
+
   homeButton: {
     flexDirection: "row",
     alignItems: "center",
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
     fontWeight: "600",
   },
 
-  /* Title */
+
   title: {
     fontSize: 34,
     fontWeight: "800",
@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
     marginBottom: 30,
   },
 
-  /* Card styling */
+
   card: {
     backgroundColor: "rgba(255,255,255,0.08)",
     padding: 18,
@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "rgba(255,255,255,0.15)",
 
-    // Shadow (iOS)
+
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.3,

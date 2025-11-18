@@ -1,5 +1,7 @@
 # 🌦️ Weather App (React Native + Expo)
 ![alt text](image.png)
+---
+
 A modern weather app built with **React Native**, **Expo**, and **WeatherAPI.com**.
 It provides real-time weather data, a 7-day forecast, animated icons, and a wind-direction compass—all inside a smooth, mobile-friendly UI.
 
